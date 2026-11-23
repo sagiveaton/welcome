@@ -1,0 +1,693 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#1846b8">
+<title>שגיב איטון | אימון בהרמת משקולות אולימפית</title>
+<meta name="description" content="שגיב איטון, אלוף ישראל בהרמת משקולות אולימפית. ניתוח טכני חינם, תוכנית אימונים עם משוב טכני על סרטונים, ליווי אישי מלא, ואימון קבוצתי למועדוני קרוספיט.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="he_IL">
+<meta property="og:title" content="שגיב איטון | אימון בהרמת משקולות אולימפית">
+<meta property="og:description" content="תוכניות אימון, משוב טכני על סרטונים וליווי אישי בהנפה, קלין ודחיקה.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Karantina:wght@400;700&family=IBM+Plex+Sans+Hebrew:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Sagiv Eaton","alternateName":"שגיב איטון","jobTitle":"מאמן הרמת משקולות אולימפית","email":"mailto:sagiv.eaton@gmail.com","telephone":"+972587372252","sameAs":["https://www.instagram.com/sagiv_eaton/"]}</script>
+<style>
+:root{
+  --singlet:#1846b8;   /* ISR singlet blue */
+  --singlet-deep:#0f2f80;
+  --ink:#0c1526;
+  --chalk:#eef1f6;
+  --paper:#ffffff;
+  --steel:#5a6578;
+  --rule:#d5dbe5;
+  --plate-red:#d42a3c;
+  --plate-blue:#1f5fd6;
+  --display:"Karantina",Impact,sans-serif;
+  --body:"IBM Plex Sans Hebrew",Arial,sans-serif;
+  --wrap:1180px;
+}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--chalk);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.7}
+img{display:block;max-width:100%}
+a{color:inherit}
+:focus-visible{outline:3px solid #ffd23f;outline-offset:3px;border-radius:4px}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 28px}
+h1,h2,h3{font-family:var(--display);font-weight:700;line-height:.92;margin:0;letter-spacing:0}
+h2{font-size:clamp(52px,7vw,92px)}
+h3{font-size:clamp(36px,4vw,48px);line-height:1}
+p{margin:0 0 1em}
+.lede{font-size:19px;color:var(--steel);max-width:58ch}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 26px;border-radius:999px;font-weight:700;font-size:16px;text-decoration:none;border:2px solid transparent;transition:background .15s,color .15s,border-color .15s}
+.btn svg{width:20px;height:20px;flex:none}
+.btn-wa{background:#fff;color:var(--singlet-deep)}
+.btn-wa:hover{background:#ffd23f;color:var(--ink)}
+.btn-line{border-color:#ffffff80;color:#fff}
+.btn-line:hover{border-color:#fff;background:#ffffff14}
+.btn-ink{background:var(--ink);color:#fff}
+.btn-ink:hover{background:var(--singlet)}
+.btn-blue{background:var(--singlet);color:#fff}
+.btn-blue:hover{background:var(--singlet-deep)}
+
+/* header */
+.top{position:absolute;inset:0 0 auto;z-index:10;color:#fff}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;height:84px}
+.brand{font-family:var(--display);font-size:38px;font-weight:700;text-decoration:none;line-height:1}
+.brand small{font-family:var(--body);font-size:12px;font-weight:500;opacity:.75;display:block;letter-spacing:.04em;direction:ltr;text-align:right;margin-top:2px}
+.top nav{display:flex;gap:28px;font-size:15px;font-weight:500}
+.top nav a{text-decoration:none;opacity:.85}
+.top nav a:hover{opacity:1;text-decoration:underline;text-underline-offset:6px}
+
+/* hero */
+.hero{background:var(--singlet);color:#fff;position:relative;overflow:hidden}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;min-height:min(100svh,880px)}
+.hero-copy{padding:150px 28px 80px 0;padding-inline-start:max(28px,calc((100vw - var(--wrap))/2 + 28px));display:flex;flex-direction:column;justify-content:center}
+.hero h1{font-size:clamp(84px,12.5vw,176px);line-height:.82;margin-bottom:28px}
+.hero h1 span{display:block}
+.hero-sub{font-size:20px;max-width:30ch;color:#dfe8ff;margin-bottom:34px}
+.hero-actions{display:flex;flex-wrap:wrap;gap:12px}
+.hero-photo{position:relative;background:var(--singlet)}
+.hero-photo img{width:100%;height:100%;object-fit:cover;object-position:50% 30%;mix-blend-mode:multiply;filter:grayscale(1) contrast(1.15) brightness(1.08)}
+.hero-photo:after{content:"";position:absolute;inset:0;background:linear-gradient(270deg,var(--singlet) 0%,transparent 22%)}
+
+/* attempt board */
+.board{position:absolute;bottom:44px;left:44px;z-index:2;background:#000;color:#fff;border-radius:6px;padding:18px 22px 16px;min-width:290px;box-shadow:0 24px 60px #00000059}
+.board .who{font-family:var(--display);font-size:40px;line-height:.95}
+.board .club{font-size:13px;color:#b9c2d3;margin:4px 0 12px}
+.board .row{display:flex;align-items:center;justify-content:space-between;gap:20px}
+.board .kg{font-family:var(--display);font-size:56px;line-height:.8;color:#5ad1ff;direction:ltr}
+.lights{display:flex;gap:9px;direction:ltr}
+.lights i{width:22px;height:22px;border-radius:50%;background:#262a31;box-shadow:inset 0 0 0 2px #3a3f48}
+.lights i.on{background:#fff;box-shadow:0 0 14px #ffffffb0,inset 0 0 0 2px #fff}
+.board .verdict{font-size:12px;color:#8e98ab;margin-top:10px;min-height:18px}
+
+/* credentials strip */
+.creds{background:var(--ink);color:#fff}
+.creds ul{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,1fr)}
+.creds li{padding:26px 28px;display:flex;gap:14px;align-items:center;font-weight:600;font-size:16px;line-height:1.35}
+.creds li+li{border-inline-start:1px solid #ffffff1f}
+.creds li i{flex:none;width:14px;height:14px;border-radius:50%;background:#fff;box-shadow:0 0 10px #ffffff90}
+
+/* sections */
+section{padding:120px 0;scroll-margin-top:20px}
+.about-grid{display:grid;grid-template-columns:5fr 6fr;gap:72px;align-items:center}
+.about-photo{position:relative}
+.about-photo img{width:100%;height:auto;aspect-ratio:4/5;object-fit:cover;object-position:50% 20%;border-radius:4px}
+.about-photo figcaption{position:absolute;bottom:-18px;right:24px;background:var(--plate-red);color:#fff;font-family:var(--display);font-size:30px;line-height:1;padding:10px 18px 8px;border-radius:3px}
+.about h2{margin-bottom:28px}
+.about p{font-size:18px;max-width:52ch}
+.about .focus{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px;padding:0;list-style:none}
+.about .focus li{border:1.5px solid var(--ink);border-radius:999px;padding:6px 16px;font-weight:600;font-size:15px}
+
+/* programs */
+.programs{background:var(--paper);border-top:1px solid var(--rule)}
+.head{display:flex;justify-content:space-between;align-items:end;gap:40px;margin-bottom:56px}
+.head .lede{margin:0;max-width:44ch}
+.plans{display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:stretch}
+.plan{border-radius:20px;padding:40px 38px 36px;display:flex;flex-direction:column;position:relative;overflow:hidden}
+.plan-a{background:var(--chalk);border:1px solid var(--rule)}
+.plan-b{background:var(--ink);color:#fff}
+.plate{position:absolute;top:30px;left:30px;width:84px;height:84px;border-radius:50%;display:grid;place-items:center;box-shadow:inset 0 0 0 6px #ffffff26,inset 0 0 0 18px transparent}
+.plate:before{content:"";position:absolute;inset:14px;border-radius:50%;border:1.5px solid #ffffff59}
+.plate span{font-family:var(--display);font-size:38px;color:#fff;line-height:1;direction:ltr;position:relative;top:2px}
+.plan-a .plate{background:var(--plate-blue)}
+.plan-b .plate{background:var(--plate-red)}
+.plan .kind{font-size:14px;font-weight:600;color:var(--steel);margin-bottom:10px}
+.plan-b .kind{color:#9fb0cc}
+.plan h3{margin-bottom:14px;max-width:9ch}
+.plan .desc{max-width:38ch;margin-bottom:26px}
+.plan-b .desc{color:#c9d3e5}
+.price{display:flex;align-items:baseline;flex-wrap:wrap;gap:6px 12px;padding:20px 0;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule)}
+.plan-b .price{border-color:#ffffff24}
+.price strong{font-family:var(--display);font-size:68px;line-height:.85;direction:ltr}
+.price .per{font-weight:600}
+.price .then{flex-basis:100%;font-size:15px;color:var(--steel)}
+.plan-b .price .then{color:#9fb0cc}
+.price s{color:var(--steel)}
+.plan-b .price s{color:#8695b0}
+.price .off{background:#ffd23f;color:var(--ink);font-weight:700;font-size:13px;border-radius:4px;padding:2px 8px}
+.plan ul{list-style:none;padding:0;margin:24px 0 32px;flex:1}
+.plan li{position:relative;padding-inline-start:26px;margin:10px 0;line-height:1.5}
+.plan li:before{content:"";position:absolute;right:0;top:.5em;width:10px;height:10px;border-radius:50%;background:var(--plate-blue)}
+.plan-b li:before{background:var(--plate-red)}
+.plan .btn{width:100%}
+.plan-a .btn{background:var(--singlet);color:#fff}
+.plan-a .btn:hover{background:var(--singlet-deep)}
+.plan-b .btn{background:#fff;color:var(--ink)}
+.plan-b .btn:hover{background:#ffd23f}
+
+.compare{margin-top:56px}
+.compare h3{font-size:40px;margin-bottom:18px}
+.table-wrap{overflow-x:auto;border:1px solid var(--rule);border-radius:14px}
+table{width:100%;border-collapse:collapse;font-size:16px;min-width:560px}
+th,td{text-align:right;padding:16px 22px;border-bottom:1px solid var(--rule);vertical-align:top}
+tr:last-child td{border-bottom:0}
+thead th{background:var(--chalk);font-weight:700}
+tbody th{font-weight:500;color:var(--steel);width:26%}
+.fine{font-size:14px;color:var(--steel);margin-top:18px;max-width:80ch}
+
+/* steps */
+.steps ol{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,1fr);gap:0;counter-reset:s;border-top:2px solid var(--ink)}
+.steps li{counter-increment:s;padding:28px 0 0;padding-inline-end:40px}
+.steps li:before{content:counter(s);display:block;font-family:var(--display);font-size:88px;line-height:.8;color:var(--singlet);margin-bottom:16px}
+.steps li strong{display:block;font-size:20px;margin-bottom:6px}
+.steps li p{color:var(--steel);margin:0}
+.steps h2{margin-bottom:48px}
+
+/* clubs */
+.clubs{background:var(--ink);color:#fff;padding:0}
+.clubs-grid{display:grid;grid-template-columns:1fr 1fr;min-height:640px}
+.clubs-photo{position:relative;min-height:420px}
+.clubs-photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 35%}
+.clubs-copy{padding:110px 28px 110px 64px;padding-inline-start:max(28px,calc((100vw - var(--wrap))/2 + 28px))}
+.clubs h2{margin-bottom:24px}
+.clubs .lede{color:#c2cde0}
+.clubs ul{list-style:none;padding:0;margin:28px 0 36px}
+.clubs li{padding:14px 0;border-bottom:1px solid #ffffff1f;font-size:17px}
+.clubs li:first-child{border-top:1px solid #ffffff1f}
+
+/* faq */
+.faq-grid{display:grid;grid-template-columns:4fr 7fr;gap:72px}
+details{border-bottom:1px solid var(--rule)}
+details:first-of-type{border-top:1px solid var(--rule)}
+summary{list-style:none;cursor:pointer;padding:22px 0;font-weight:600;font-size:19px;display:flex;justify-content:space-between;gap:20px;align-items:center}
+summary::-webkit-details-marker{display:none}
+summary:after{content:"";flex:none;width:14px;height:14px;border-left:2.5px solid var(--singlet);border-bottom:2.5px solid var(--singlet);transform:rotate(-45deg) translateY(-3px);transition:transform .2s}
+details[open] summary:after{transform:rotate(135deg) translateY(-3px)}
+details p{color:var(--steel);padding-bottom:20px;margin:0;max-width:62ch}
+
+/* contact */
+.contact{background:var(--singlet);color:#fff;text-align:center;padding:120px 0 130px}
+.contact h2{font-size:clamp(64px,10vw,140px);line-height:.85;margin-bottom:22px}
+.contact p{color:#dfe8ff;font-size:19px}
+.contact .hero-actions{justify-content:center;margin-top:34px}
+footer{background:var(--singlet-deep);color:#c3d1f3;font-size:14px}
+footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;padding-top:24px;padding-bottom:24px}
+footer a{color:#fff}
+
+/* free analysis */
+.free{padding:0 0 110px;background:var(--chalk)}
+.free-box{background:var(--paper);border:1px solid var(--rule);border-radius:20px;padding:48px;display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center;transform:translateY(-1px)}
+.free h2{font-size:clamp(48px,6vw,76px);margin-bottom:16px}
+.free .lede{margin-bottom:26px}
+.howto{background:var(--chalk);border-radius:14px;padding:24px 26px}
+.howto strong{display:block;margin-bottom:8px}
+.howto ul{margin:0;padding-inline-start:20px;color:var(--steel)}
+.howto li{margin:6px 0}
+.hero-club{margin-top:22px;font-size:15px;color:#dfe8ff}
+.hero-club a{color:#fff;font-weight:600;text-underline-offset:5px}
+
+/* founders */
+.founders{display:flex;align-items:center;justify-content:space-between;gap:24px 40px;flex-wrap:wrap;background:#ffd23f;color:var(--ink);border-radius:20px;padding:28px 34px;margin-bottom:24px}
+.founders h3{font-size:44px;margin-bottom:6px}
+.founders p{margin:0;max-width:60ch}
+.founders .btn{flex:none}
+
+/* club workshop */
+.workshop{background:#ffffff0f;border:1px solid #ffffff2b;border-radius:16px;padding:26px 28px;margin:8px 0 30px}
+.workshop h3{font-size:42px;margin-bottom:10px}
+.workshop p{color:#c2cde0;margin:0}
+.workshop .free-tag{display:inline-block;background:#ffd23f;color:var(--ink);font-weight:700;font-size:14px;border-radius:4px;padding:2px 10px;margin-top:14px}
+
+/* forms */
+.form .field{display:grid;gap:6px;margin-bottom:16px}
+.form label,.form legend{font-weight:600;font-size:15px}
+.form .opt{font-weight:400;color:var(--steel)}
+.form input:not([type=radio]):not([type=checkbox]),.form select,.form textarea{font:inherit;font-size:16px;width:100%;padding:12px 14px;border:1.5px solid var(--rule);border-radius:10px;background:#fff;color:var(--ink);min-height:50px}
+.form textarea{resize:vertical;min-height:72px}
+.form input:focus,.form select:focus,.form textarea:focus{outline:none;border-color:var(--singlet);box-shadow:0 0 0 3px #1846b833}
+.form [aria-invalid=true]{border-color:var(--plate-red)!important}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:0 14px}
+.err{color:var(--plate-red);font-weight:600;font-size:14px;margin:10px 0 0}
+.form-dark .err{color:#ff8a96}
+.hint{font-size:14px;color:var(--steel);margin:12px 0 0}
+.form-dark{background:#ffffff0d;border:1px solid #ffffff24;border-radius:16px;padding:24px}
+.form-dark label{color:#fff}
+.form-dark .hint{color:#9fb0cc}
+.form-dark .hint a{color:#fff}
+.form-title{font-size:38px;margin-bottom:18px}
+.choice{border:0;padding:0;margin:0 0 14px;display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.choice legend{margin-bottom:8px;padding:0}
+.opt-card{display:flex;gap:10px;align-items:flex-start;border:1.5px solid var(--rule);border-radius:12px;padding:14px;cursor:pointer;font-weight:400!important}
+.opt-card:has(input:checked){border-color:var(--singlet);background:#1846b80d}
+.opt-card input{margin-top:5px;accent-color:var(--singlet)}
+.opt-card b{display:block;font-size:15px;line-height:1.35}
+.opt-card small{color:var(--steel);font-size:14px}
+.check{display:flex;gap:10px;align-items:center;background:#ffd23f40;border-radius:10px;padding:12px 14px;margin-bottom:18px;cursor:pointer}
+.check input{width:18px;height:18px;accent-color:var(--ink)}
+.wide{width:100%}
+.btn-ghost{background:transparent;color:var(--steel);margin-top:8px}
+.btn-ghost:hover{color:var(--ink)}
+button.btn{cursor:pointer;font-family:inherit}
+
+/* dialog */
+dialog{border:0;border-radius:20px;padding:0;width:min(560px,calc(100% - 24px));max-height:calc(100svh - 24px);color:var(--ink);background:var(--paper)}
+dialog::backdrop{background:#0c1526b8}
+.dlg{padding:26px 28px 28px}
+.dlg-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:14px}
+.dlg-head h3{font-size:44px}
+.x{border:0;background:var(--chalk);width:40px;height:40px;border-radius:50%;font-size:24px;line-height:1;cursor:pointer;color:var(--ink)}
+.done h3{font-size:44px;margin-bottom:10px}
+.done a:not(.btn){color:var(--singlet)}
+.done .btn{margin-top:8px}
+
+/* sticky mobile CTA */
+.dock{display:none}
+
+/* motion: one moment — the referees' lights */
+@media (prefers-reduced-motion:no-preference){
+  .js .lights i{transition:background .25s,box-shadow .25s}
+  .js .board .verdict{opacity:0;transition:opacity .4s}
+  .js .board.done .verdict{opacity:1}
+}
+
+@media (max-width:960px){
+  .hero-grid{grid-template-columns:1fr;min-height:0}
+  .hero-copy{padding:120px 22px 48px;order:1}
+  .hero-photo{height:72svh;min-height:440px;order:2}
+  .hero-photo:after{background:linear-gradient(180deg,var(--singlet) 0%,transparent 18%)}
+  .board{left:16px;right:16px;bottom:16px;min-width:0}
+  .top nav{display:none}
+  .creds ul{grid-template-columns:1fr}
+  .creds li{padding:18px 22px}
+  .creds li+li{border-inline-start:0;border-top:1px solid #ffffff1f}
+  section{padding:84px 0}
+  .wrap{padding:0 22px}
+  .about-grid,.faq-grid{grid-template-columns:1fr;gap:48px}
+  .head{flex-direction:column;align-items:start;gap:18px;margin-bottom:36px}
+  .plans{grid-template-columns:1fr}
+  .plan{padding:34px 24px 28px}
+  .steps ol{grid-template-columns:1fr}
+  .free{padding:0 0 72px}
+  .row2{grid-template-columns:1fr}
+  .choice{grid-template-columns:1fr}
+  .dlg{padding:22px 18px}
+  dialog{width:calc(100% - 16px);max-height:calc(100svh - 16px)}
+  .free-box{grid-template-columns:1fr;gap:28px;padding:32px 22px}
+  .founders{padding:24px 22px}
+  .founders .btn{width:100%}
+  .steps li{padding:22px 0;border-bottom:1px solid var(--rule);display:grid;grid-template-columns:64px 1fr;column-gap:12px;padding-inline-end:0}
+  .steps li:before{grid-row:span 2;font-size:72px;margin:0}
+  .clubs-grid{grid-template-columns:1fr}
+  .clubs-photo{height:440px}
+  .about-photo img{aspect-ratio:1/1.05}
+  .plate{width:68px;height:68px;top:24px;left:20px}.plate span{font-size:30px}
+  .clubs-copy{padding:64px 22px 72px}
+  .contact{padding:88px 0 140px}
+  footer{padding-bottom:76px}
+  .dock{display:flex;position:fixed;inset:auto 12px calc(12px + env(safe-area-inset-bottom)) 12px;z-index:20;transform:translateY(140%);transition:transform .25s}
+  .dock.show{transform:none}
+  .dock .btn{width:100%;background:#25d366;color:#06301a;box-shadow:0 10px 30px #0c152640}
+}
+@media (max-width:420px){
+  .hero h1{font-size:88px}
+  .price strong{font-size:58px}
+}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#top">שגיב איטון<small>SAGIV EATON</small></a>
+    <nav aria-label="ניווט ראשי">
+      <a href="#about">עליי</a>
+      <a href="#programs">תוכניות</a>
+      <a href="#clubs">למועדונים</a>
+      <a href="#faq">שאלות</a>
+      <a href="#contact">יצירת קשר</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <div class="hero">
+    <div class="hero-grid">
+      <div class="hero-copy">
+        <h1><span>להרים נכון.</span><span>להרים יותר.</span></h1>
+        <p class="hero-sub">אימון וליווי טכני בהנפה, דחיקה, עם משוב אישי על כל סרטון שאתם שולחים.</p>
+        <div class="hero-actions">
+          <a class="btn btn-wa" href="#free">ניתוח סרטון חינם</a>
+          <a class="btn btn-line" href="#programs">לתוכניות ולמחירים</a>
+        </div>
+        <p class="hero-club">בעלי מועדון קרוספיט? <a href="#clubs">סדנת הנפה ראשונה ללא עלות</a></p>
+      </div>
+      <div class="hero-photo">
+        <img src="images/hero-snatch.jpg" alt="שגיב איטון בתנוחת מספריים מתחת למוט בתחרות" width="1000" height="1501">
+        <div class="board" id="board" aria-label="לוח ניסיון: איטון שגיב, 120 קילו, הרמה תקינה">
+          <div class="who">איטון שגיב</div>
+          <div class="club">מועדון ענפי הכוח הפועל רעננה</div>
+          <div class="row">
+            <div class="kg">120 kg</div>
+            <div class="lights" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i></div>
+          </div>
+          <div class="verdict">הרמה תקינה, שלושה שופטים</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="creds">
+    <ul class="wrap">
+      <li><i aria-hidden="true"></i>אלוף ישראל בהרמת משקולות אולימפית</li>
+      <li><i aria-hidden="true"></i>מתחרה בארץ ובתחרויות בינלאומיות</li>
+      <li><i aria-hidden="true"></i>בוגר קורס מאמני הרמת משקולות בווינגייט</li>
+    </ul>
+  </div>
+
+  <section class="about" id="about">
+    <div class="wrap about-grid">
+      <figure class="about-photo" style="margin:0">
+        <img src="images/about-smile.jpg" alt="שגיב איטון מחייך על הפלטפורמה אחרי הרמה" loading="lazy" width="694" height="1536">
+        <figcaption>אלוף ישראל</figcaption>
+      </figure>
+      <div>
+        <h2>אני שגיב איטון.</h2>
+        <p>ספורטאי תחרותי ואלוף ישראל בהרמת משקולות אולימפית. אני מתחרה בארץ ובחו״ל, ובמקביל צברתי ניסיון בהדרכת קבוצות ובאימונים אישיים.</p>
+        <p>המטרה שלי היא לעזור לכם להבין את הטכניקה שלכם, לזהות מה מעכב אתכם ולהתקדם בעזרת תוכנית ברורה ומשוב מדויק.</p>
+        <ul class="focus" aria-label="תחומי עבודה">
+          <li>הנפה</li><li>דחיקה</li><li>תרגילי עזר</li><li>ניתוח וידאו</li><li>תכנון עומסים</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="free" id="free">
+    <div class="wrap">
+      <div class="free-box">
+        <div>
+          <h2>ניתוח טכני חינם</h2>
+          <p class="lede">שלחו לי סרטון אחד של הנפה או של דחיקה. אחזור אליכם עם 2–3 תיקונים שאפשר להתחיל לעבוד עליהם כבר באימון הבא.</p>
+          <form class="form" id="free-form" novalidate>
+            <div class="row2">
+              <div class="field"><label for="ff-name">שם</label><input id="ff-name" name="name" autocomplete="given-name" required></div>
+              <div class="field"><label for="ff-lift">איזו הרמה?</label><select id="ff-lift" name="lift"><option>הנפה</option><option>קלין</option><option>דחיקה (ג׳רק)</option><option>clean and jerk</option></select></div>
+            </div>
+            <div class="field"><label for="ff-issue">מה מרגיש לכם לא נכון? <span class="opt">(לא חובה)</span></label><input id="ff-issue" name="issue" placeholder="למשל: המוט בורח קדימה"></div>
+            <a class="btn btn-blue" href="https://wa.me/972587372252" data-send><svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.4.1-.7.3-.2.3-.9.9-.9 2.2s.9 2.5 1 2.7c.1.2 1.8 2.8 4.4 3.9 1.6.7 2.3.8 3.1.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3z"/></svg>המשך לשליחת הסרטון</a>
+            <p class="err" role="alert" hidden>יש למלא את השדות המסומנים באדום.</p>
+            <p class="hint">ייפתח וואטסאפ עם הפרטים שלכם. צרפו את הסרטון לאותה הודעה.</p>
+          </form>
+        </div>
+        <div class="howto">
+          <strong>איך לצלם כדי שאוכל לעזור</strong>
+          <ul>
+            <li>מהצד, בגובה המוט, כשכל הגוף בפריים</li>
+            <li>ניסיון אחד במשקל שאתם עובדים איתו באימון</li>
+            <li>בלי האטה ובלי חיתוכים, מהעמידה מול המוט ועד הסוף</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="programs" id="programs">
+    <div class="wrap">
+      <div class="head">
+        <h2>שני מסלולים.<br>מטרה אחת.</h2>
+        <p class="lede">בשני המסלולים מקבלים ייעוץ אישי ומשוב על סרטוני אימון. ההבדל: תוכנית משותפת, או תוכנית שנבנית במיוחד בשבילכם.</p>
+      </div>
+
+      <div class="founders">
+        <div>
+          <h3>מקומות מייסדים: 5 מתאמנים ראשונים</h3>
+          <p>חודש ראשון ב־₪50, בכל מסלול. בתמורה: אישור להשתמש בסרטונים שלכם ומשוב כן בסוף החודש.</p>
+        </div>
+        <button class="btn btn-ink" type="button" data-signup="general" data-founder="1">לשריון מקום מייסד</button>
+      </div>
+
+      <div class="plans">
+        <article class="plan plan-a">
+          <div class="plate" aria-hidden="true"><span>20</span></div>
+          <div class="kind">תוכנית משותפת</div>
+          <h3>תוכנית כללית וייעוץ אישי</h3>
+          <p class="desc">תוכנית אימונים מסודרת עם ליווי טכני אישי בוואטסאפ לאורך הדרך.</p>
+          <div class="price">
+            <strong>₪149</strong><span class="per">לחודש</span>
+          </div>
+          <ul>
+            <li>תוכנית אימונים משותפת עם התקדמות מתוכננת</li>
+            <li>עבודה על הנפה, קלין, דחיקה ותרגילי עזר</li>
+            <li>משוב טכני על סרטונים: עד 2 סרטונים מכל אימון, עד 5 אימונים בשבוע</li>
+            <li>ייעוץ ושאלות בוואטסאפ</li>
+            <li>מענה תוך 48 שעות בימי עבודה</li>
+          </ul>
+          <button class="btn" type="button" data-signup="general">להרשמה לתוכנית הכללית</button>
+        </article>
+
+        <article class="plan plan-b">
+          <div class="plate" aria-hidden="true"><span>25</span></div>
+          <div class="kind">תוכנית מותאמת אישית</div>
+          <h3>ליווי אישי מלא</h3>
+          <p class="desc">תוכנית שנבנית עבורכם, עם מעקב, התאמות שוטפות וליווי צמוד יותר.</p>
+          <div class="price">
+            <strong>₪600</strong><span class="per">לחודש</span>
+          </div>
+          <ul>
+            <li>שיחת היכרות ואבחון של המטרות והרמה שלכם</li>
+            <li>תוכנית אישית לפי הצרכים והזמינות שלכם</li>
+            <li>עדכון שבועי והתאמות לפי ההתקדמות</li>
+            <li>ניתוח סרטונים ומשוב טכני מכל אימון</li>
+            <li>ייעוץ שוטף בוואטסאפ ומענה תוך 24 שעות בימי עבודה</li>
+            <li>מעקב התקדמות ושיחת מעקב חודשית</li>
+          </ul>
+          <button class="btn" type="button" data-signup="full">להרשמה לליווי האישי</button>
+        </article>
+      </div>
+
+      <div class="compare">
+        <h3>ההבדלים בקצרה</h3>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th scope="col"><span class="sr" style="position:absolute;clip:rect(0 0 0 0)">מאפיין</span></th><th scope="col">תוכנית כללית</th><th scope="col">ליווי אישי מלא</th></tr></thead>
+            <tbody>
+              <tr><th scope="row">תוכנית האימונים</th><td>משותפת, עם התקדמות מתוכננת</td><td>נבנית אישית ומתעדכנת כל שבוע</td></tr>
+              <tr><th scope="row">משוב על סרטונים</th><td>עד 2 סרטונים לאימון, עד 5 אימונים בשבוע</td><td>מכל אימון</td></tr>
+              <tr><th scope="row">זמן מענה בוואטסאפ</th><td>עד 48 שעות בימי עבודה</td><td>עד 24 שעות בימי עבודה</td></tr>
+              <tr><th scope="row">שיחות</th><td>—</td><td>שיחת היכרות ושיחת מעקב חודשית</td></tr>
+              <tr><th scope="row">מחיר חודשי</th><td>₪149</td><td>₪600</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="fine">מחיר המייסדים לחמשת המצטרפים הראשונים, לחודש הראשון בלבד. ההרשמה דרך האתר, והאישור והתשלום בוואטסאפ. פירוט היקף השירות וזמינות ההצטרפות יימסרו לפני תחילת הליווי.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="steps" aria-labelledby="steps-title">
+    <div class="wrap">
+      <h2 id="steps-title">איך מתחילים</h2>
+      <ol>
+        <li><strong>נרשמים</strong><p>בוחרים מסלול וממלאים הרשמה קצרה: ניסיון, מטרה וכמה פעמים בשבוע אתם מתאמנים.</p></li>
+        <li><strong>משלמים ומקבלים תוכנית</strong><p>אחרי התשלום אני שולח את התוכנית ומסביר איך לצלם ולשלוח סרטונים.</p></li>
+        <li><strong>מתאמנים ומקבלים משוב</strong><p>מצלמים את ההרמות, שולחים, ומקבלים משוב טכני מדויק על מה לתקן.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <!--
+    המלצות: כשיהיו המלצות ממתאמנים, מחקו את שורות ההערה סביב הקטע הזה ומלאו שם, משפט ומה השתפר.
+  <section class="quotes" id="quotes">
+    <div class="wrap">
+      <h2>מה אומרים המתאמנים</h2>
+      <blockquote><p>"..."</p><cite>שם המתאמן, מה השתפר</cite></blockquote>
+    </div>
+  </section>
+  -->
+
+  <section class="clubs" id="clubs">
+    <div class="clubs-grid">
+      <div class="clubs-copy">
+        <h2>בעלי מועדוני קרוספיט</h2>
+        <p class="lede">רוצים לפתח את תחום הרמת המשקולות במועדון? אני מחפש להשתלב כמאמן, לבנות אימונים לפי רמת הקבוצה ולהרחיב את הפעילות בהדרגה.</p>
+        <ul>
+          <li>שיעורי הרמת משקולות אולימפית במועדון שלכם</li>
+          <li>תכנון אימונים לפי הרמה והצרכים של הקבוצה</li>
+          <li>דגש על טכניקה, התקדמות ויחס אישי לכל מתאמן</li>
+          <li>אפשרות להרחיב את הפעילות לפי הביקוש</li>
+        </ul>
+        <div class="workshop">
+          <h3>מתחילים בסדנת הנפה</h3>
+          <p>שעתיים עם המתאמנים שלכם: פירוק ההנפה לשלבים, תרגול עם תיקונים אישיים, ותרגילי עזר שאפשר להמשיך איתם בשיעורים. אם זה מתאים לכם, נדבר על שיעור קבוע.</p>
+          <span class="free-tag">הסדנה הראשונה ללא עלות</span>
+        </div>
+        <form class="form form-dark" id="club-form" novalidate>
+          <h3 class="form-title">קביעת סדנה</h3>
+          <div class="row2">
+            <div class="field"><label for="cf-club">שם המועדון</label><input id="cf-club" name="club" required></div>
+            <div class="field"><label for="cf-city">עיר</label><input id="cf-city" name="city" required></div>
+          </div>
+          <div class="row2">
+            <div class="field"><label for="cf-name">איש קשר</label><input id="cf-name" name="name" autocomplete="name" required></div>
+            <div class="field"><label for="cf-size">כמה משתתפים בערך?</label><select id="cf-size" name="size"><option>עד 8</option><option>9–15</option><option>16–25</option><option>יותר מ־25</option></select></div>
+          </div>
+          <div class="row2">
+            <div class="field"><label for="cf-type">מה מעניין אתכם?</label><select id="cf-type" name="type"><option>סדנה ראשונה (ללא עלות)</option><option>שיעור קבוע</option><option>עוד לא בטוח, רוצה לדבר</option></select></div>
+            <div class="field"><label for="cf-date">תאריך מועדף</label><input id="cf-date" name="date" type="date"></div>
+          </div>
+          <a class="btn btn-wa" href="https://wa.me/972587372252" data-send><svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.4.1-.7.3-.2.3-.9.9-.9 2.2s.9 2.5 1 2.7c.1.2 1.8 2.8 4.4 3.9 1.6.7 2.3.8 3.1.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3z"/></svg>שליחת הבקשה בוואטסאפ</a>
+          <p class="err" role="alert" hidden>יש למלא את השדות המסומנים באדום.</p>
+          <p class="hint" id="cf-cal-wrap" hidden>מעדיפים לבחור מועד לבד? <a id="cf-cal" href="#" target="_blank" rel="noopener">ליומן הפנוי שלי</a></p>
+        </form>
+      </div>
+      <div class="clubs-photo"><img src="images/club-120kg.jpg" alt="שגיב איטון חוגג הרמה מוצלחת של 120 קילו" width="900" height="1351"></div>
+    </div>
+  </section>
+
+  <section class="faq" id="faq">
+    <div class="wrap faq-grid">
+      <h2>שאלות נפוצות</h2>
+      <div>
+        <details><summary>איך עובד המשוב על הסרטונים?</summary><p>מצלמים את ההרמות באימון ושולחים בוואטסאפ. בתוכנית הכללית אפשר לשלוח עד 2 סרטונים מכל אימון, עד 5 אימונים בשבוע. בליווי האישי מקבלים ניתוח ומשוב מכל אימון.</p></details>
+        <details><summary>תוך כמה זמן אקבל תשובה?</summary><p>בתוכנית הכללית: עד 48 שעות בימי עבודה. בליווי האישי המלא: עד 24 שעות בימי עבודה.</p></details>
+        <details><summary>מה ההבדל בין שני המסלולים?</summary><p>בתוכנית הכללית מתאמנים לפי תוכנית משותפת עם ייעוץ אישי. בליווי המלא התוכנית נבנית בשבילכם, מתעדכנת כל שבוע, וכוללת שיחת היכרות ושיחת מעקב חודשית.</p></details>
+        <details><summary>מה זה מקומות מייסדים?</summary><p>חמשת המתאמנים הראשונים מקבלים את החודש הראשון ב־₪50, בכל מסלול. בתמורה הם מאשרים לי להשתמש בסרטונים שלהם ונותנים משוב כן בסוף החודש. מהחודש השני המחיר רגיל: ₪149 לתוכנית הכללית ו־₪600 לליווי האישי המלא.</p></details>
+        <details><summary>הניתוח החינמי מחייב אותי להירשם?</summary><p>לא. שולחים סרטון אחד ומקבלים תיקונים. אם תרצו להמשיך, נדבר על המסלול שמתאים לכם.</p></details>
+        <details><summary>איך נרשמים ומשלמים?</summary><p>לוחצים על "להרשמה" במסלול שבחרתם וממלאים כמה פרטים. ההרשמה נשלחת אליי בוואטסאפ, ומשם ממשיכים לתשלום. לפני תחילת הליווי תקבלו פירוט של היקף השירות.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="wrap">
+      <h2>יש שאלה?<br>דברו איתי.</h2>
+      <p>מתאמנים ובעלי מועדונים, אפשר לפנות אליי ישירות.</p>
+      <div class="hero-actions">
+        <a class="btn btn-wa" href="https://wa.me/972587372252?text=%D7%94%D7%99%D7%99%20%D7%A9%D7%92%D7%99%D7%91%2C%20%D7%94%D7%92%D7%A2%D7%AA%D7%99%20%D7%9E%D7%94%D7%90%D7%AA%D7%A8%20%D7%95%D7%99%D7%A9%20%D7%9C%D7%99%20%D7%A9%D7%90%D7%9C%D7%94" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.4.1-.7.3-.2.3-.9.9-.9 2.2s.9 2.5 1 2.7c.1.2 1.8 2.8 4.4 3.9 1.6.7 2.3.8 3.1.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3z"/></svg>וואטסאפ <span dir="ltr">058-737-2252</span></a>
+        <a class="btn btn-line" href="https://www.instagram.com/sagiv_eaton/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg><span dir="ltr">@sagiv_eaton</span></a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© שגיב איטון, הרמת משקולות אולימפית</span>
+    <a href="mailto:sagiv.eaton@gmail.com">sagiv.eaton@gmail.com</a>
+  </div>
+</footer>
+
+<dialog id="signup" aria-labelledby="su-title">
+  <div class="dlg">
+    <div class="dlg-head">
+      <h3 id="su-title">הרשמה</h3>
+      <button class="x" type="button" data-close aria-label="סגירה">×</button>
+    </div>
+    <form class="form" id="su-form" novalidate>
+      <fieldset class="choice">
+        <legend>מסלול</legend>
+        <label class="opt-card"><input type="radio" name="track" value="general" checked><span><b>תוכנית כללית וייעוץ אישי</b><small>₪149 לחודש</small></span></label>
+        <label class="opt-card"><input type="radio" name="track" value="full"><span><b>ליווי אישי מלא</b><small>₪600 לחודש</small></span></label>
+      </fieldset>
+      <label class="check"><input type="checkbox" name="founder" id="su-founder"> <span>אני רוצה מקום מייסד: חודש ראשון ב־₪50</span></label>
+      <div class="field"><label for="su-name">שם מלא</label><input id="su-name" name="name" autocomplete="name" required></div>
+      <div class="row2">
+        <div class="field"><label for="su-exp">ניסיון בהרמת משקולות</label><select id="su-exp" name="exp"><option>מתחיל/ה</option><option>עד שנה</option><option>שנה עד 3 שנים</option><option>יותר מ־3 שנים</option></select></div>
+        <div class="field"><label for="su-days">אימונים בשבוע</label><select id="su-days" name="days"><option>2</option><option selected>3</option><option>4</option><option>5</option></select></div>
+      </div>
+      <div class="field"><label for="su-goal">מה המטרה שלכם?</label><textarea id="su-goal" name="goal" rows="2" placeholder="למשל: לשפר את התפיסה בהנפה, להתכונן לתחרות"></textarea></div>
+      <a class="btn btn-blue wide" href="https://wa.me/972587372252" data-send><svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.4.1-.7.3-.2.3-.9.9-.9 2.2s.9 2.5 1 2.7c.1.2 1.8 2.8 4.4 3.9 1.6.7 2.3.8 3.1.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3z"/></svg>שליחת ההרשמה בוואטסאפ</a>
+      <p class="err" role="alert" hidden>יש למלא את השדות המסומנים באדום.</p>
+      <p class="hint">ההרשמה נשלחת אליי בוואטסאפ. אחזור אליכם לאישור ולתשלום.</p>
+    </form>
+    <div class="done" id="su-done" hidden>
+      <p>אם וואטסאפ לא נפתח, <a id="su-retry" href="#" target="_blank" rel="noopener">לחצו כאן לשליחה</a>.</p>
+      <p id="su-nopay">אחזור אליכם בוואטסאפ לאישור ולתשלום.</p>
+      <p id="su-pay-wrap" hidden>אפשר כבר לשלם ולשריין את המקום:</p>
+      <a class="btn btn-blue wide" id="su-pay" href="#" target="_blank" rel="noopener" hidden>לתשלום מאובטח</a>
+      <button class="btn btn-ghost wide" type="button" data-close>סגירה</button>
+    </div>
+  </div>
+</dialog>
+
+<div class="dock" id="dock"><a class="btn" href="#free"><svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.4.1-.7.3-.2.3-.9.9-.9 2.2s.9 2.5 1 2.7c.1.2 1.8 2.8 4.4 3.9 1.6.7 2.3.8 3.1.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3z"/></svg>ניתוח סרטון חינם</a></div>
+
+<script>
+/* ============ הגדרות: לעדכן כאן ============
+   pay: קישורי תשלום (Morning, Grow, PayBox וכו'). ריק = התשלום ממשיך בוואטסאפ.
+   calendar: קישור ליומן קביעת פגישות (Google Calendar, Calendly). ריק = לא מוצג. */
+var CONFIG = {
+  phone: '972587372252',
+  pay: { general: '', full: '', founder: '' },
+  calendar: ''
+};
+/* ========================================= */
+(function(){
+  document.documentElement.classList.add('js');
+  var wa=function(lines){return 'https://wa.me/'+CONFIG.phone+'?text='+encodeURIComponent(lines.filter(Boolean).join('\n'))};
+  var val=function(f,n){var e=f.elements[n];return e?String(e.value||'').trim():''};
+  var desktop=window.matchMedia('(hover:hover) and (pointer:fine)').matches;
+
+  /* Each form has a real link (a[data-send]) whose href is kept up to date as fields change.
+     A plain link to wa.me is not blocked like a script-opened window, including inside Instagram's browser. */
+  function wire(form,build,onSent){
+    if(!form)return;
+    var link=form.querySelector('[data-send]'),err=form.querySelector('.err');
+    if(desktop){link.target='_blank';link.rel='noopener'}
+    var refresh=function(){link.href=wa(build(form))};
+    form.addEventListener('input',refresh);form.addEventListener('change',refresh);refresh();
+    var valid=function(){var first=null;Array.prototype.forEach.call(form.querySelectorAll('[required]'),function(el){var bad=!el.value.trim();el.setAttribute('aria-invalid',bad?'true':'false');if(bad&&!first)first=el});err.hidden=!first;if(first)first.focus();return !first};
+    link.addEventListener('click',function(e){refresh();if(!valid()){e.preventDefault();return}if(onSent)setTimeout(onSent,400)});
+    form.addEventListener('submit',function(e){e.preventDefault();link.click()});
+  }
+
+  wire(document.getElementById('free-form'),function(f){
+    return ['היי שגיב, אשמח לניתוח טכני חינם.','שם: '+val(f,'name'),'הרמה: '+val(f,'lift'),val(f,'issue')?'מה מפריע לי: '+val(f,'issue'):'','(מצרף/ת סרטון)'];
+  });
+
+  if(CONFIG.calendar){document.getElementById('cf-cal').href=CONFIG.calendar;document.getElementById('cf-cal-wrap').hidden=false}
+  wire(document.getElementById('club-form'),function(f){
+    var d=val(f,'date');if(d){var p=d.split('-');d=p[2]+'/'+p[1]+'/'+p[0]}
+    return ['היי שגיב, אני מעוניין/ת בסדנת הנפה.','מועדון: '+val(f,'club')+(val(f,'city')?', '+val(f,'city'):''),'איש קשר: '+val(f,'name'),'משתתפים: '+val(f,'size'),'מה מעניין: '+val(f,'type'),d?'תאריך מועדף: '+d:''];
+  });
+
+  var dlg=document.getElementById('signup'),sf=document.getElementById('su-form'),done=document.getElementById('su-done'),title=document.getElementById('su-title');
+  var names={general:'תוכנית כללית וייעוץ אישי (₪149 לחודש)',full:'ליווי אישי מלא (₪600 לחודש)'};
+  var closeDlg=function(){if(dlg.close)dlg.close();else dlg.removeAttribute('open')};
+  var buildSignup=function(f){
+    var t=f.querySelector('input[name=track]:checked').value,fo=document.getElementById('su-founder').checked;
+    return ['היי שגיב, נרשמתי דרך האתר.','מסלול: '+names[t],fo?'מקום מייסד: כן (חודש ראשון ב־₪50)':'','שם: '+val(f,'name'),'ניסיון: '+val(f,'exp'),'אימונים בשבוע: '+val(f,'days'),val(f,'goal')?'מטרה: '+val(f,'goal'):''];
+  };
+  wire(sf,buildSignup,function(){
+    var t=sf.querySelector('input[name=track]:checked').value,fo=document.getElementById('su-founder').checked;
+    document.getElementById('su-retry').href=wa(buildSignup(sf));
+    var pay=fo?CONFIG.pay.founder:CONFIG.pay[t],pb=document.getElementById('su-pay');
+    pb.hidden=!pay;document.getElementById('su-pay-wrap').hidden=!pay;document.getElementById('su-nopay').hidden=!!pay;if(pay)pb.href=pay;
+    sf.hidden=true;done.hidden=false;title.textContent='ההרשמה נשלחה';
+  });
+  document.querySelectorAll('[data-signup]').forEach(function(b){b.addEventListener('click',function(){
+    sf.hidden=false;done.hidden=true;title.textContent='הרשמה';sf.querySelector('.err').hidden=true;
+    sf.querySelector('input[value="'+b.getAttribute('data-signup')+'"]').checked=true;
+    document.getElementById('su-founder').checked=b.hasAttribute('data-founder');
+    sf.dispatchEvent(new Event('change'));
+    if(dlg.showModal)dlg.showModal();else dlg.setAttribute('open','');
+  })});
+  document.querySelectorAll('[data-close]').forEach(function(b){b.addEventListener('click',closeDlg)});
+  dlg&&dlg.addEventListener('click',function(e){if(e.target===dlg)closeDlg()});
+
+  var board=document.getElementById('board');
+  var reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if(board && !reduce){
+    var lights=board.querySelectorAll('.lights i');
+    lights.forEach(function(l){l.classList.remove('on')});
+    lights.forEach(function(l,i){setTimeout(function(){l.classList.add('on')},700+i*380)});
+    setTimeout(function(){board.classList.add('done')},700+lights.length*380+150);
+  } else if(board){board.classList.add('done')}
+
+  var dock=document.getElementById('dock'), hero=document.querySelector('.hero'), contact=document.getElementById('contact');
+  if('IntersectionObserver' in window && dock){
+    var heroIn=true, contactIn=false;
+    var upd=function(){dock.classList.toggle('show',!heroIn&&!contactIn)};
+    new IntersectionObserver(function(e){heroIn=e[0].isIntersecting;upd()}).observe(hero);
+    new IntersectionObserver(function(e){contactIn=e[0].isIntersecting;upd()}).observe(contact);
+  }
+})();
+</script>
+</body>
+</html>
